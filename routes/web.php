@@ -23,8 +23,8 @@
 Route::get('/', 'PublicController@index')->name('index');
 Route::get('/about', 'PublicController@about')->name('about');
 Route::get('/contact', 'PublicController@contact')->name('contact');
-
 Route::get('/idcard', 'PublicController@idcard')->name('idcard');
+Route::post('/idcard', 'PublicController@createid')->name('createId');
 
 Auth::routes();
 

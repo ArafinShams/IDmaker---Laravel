@@ -25,4 +25,8 @@ class PublicController extends Controller
     {
         return view('createidcard');
     }
+    public function createid(Request $request)
+    {
+        var_dump($request->all());
+    }
 }
